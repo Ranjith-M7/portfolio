@@ -37,7 +37,7 @@ const Portfolio = () => {
    
       <div
         name="portfolio"
-        className="bg-gradient-to-b from-black to-gray-800 text-white w-full"
+        className="bg-gradient-to-b from-black to-gray-800 text-white w-full md:h-screen"
       >
         <div className="max-w-screen-lg mx-auto p-4 flex flex-col justify-center w-full h-full">
           <div className="pb-8">
