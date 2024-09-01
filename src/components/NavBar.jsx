@@ -14,14 +14,14 @@ const NavBar = () => {
   ];
 
   return (
-    <div className="flex justify-between items-center w-full h-20 bg-black text-white fixed z-50">
-      <h1 className="text-5xl font-signature ml-5">Ranjith</h1>
+    <div className="flex justify-between items-center w-full h-20 bg-black text-white fixed z-50 px-10">
+      <h1 className="text-xl">RANJITH M</h1>
 
       <ul className="hidden md:flex">
         {links.map(({ id, link }) => (
           <li
             key={id}
-            className="px-4 cursor-pointer capitalize font-medium text-gray-500 hover:scale-105 duration-200"
+            className="px-4 cursor-pointer capitalize font-medium text-gray-500 hover:scale-105 hover:text-white duration-200"
           >
             <Link to={link} smooth duration={500}>
               {link}
@@ -32,9 +32,9 @@ const NavBar = () => {
 
       <div
         onClick={() => setNav(!nav)}
-        className="mr-5 cursor-pointer z-10 text-gray-500 md:hidden"
+        className="cursor-pointer z-10 text-gray-500 md:hidden"
       >
-        {nav ? <FaTimes size={30} /> : <FaBars size={30} />}
+        {nav ? <FaTimes size={25} /> : <FaBars size={25} />}
       </div>
 
       {nav && (
@@ -42,7 +42,7 @@ const NavBar = () => {
           {links.map(({ id, link }) => (
             <li
               key={id}
-              className="px-4 py-6 text-4xl capitalize cursor-pointer"
+              className="px-4 py-6 text-3xl capitalize cursor-pointer"
             >
               <Link
                 onClick={() => setNav(!nav)}

@@ -3,10 +3,11 @@ import html from "../assets/html.png";
 import css from "../assets/css.png";
 import javascript from "../assets/javascript.png";
 import reactJs from "../assets/react.png";
-import nextJs from "../assets/nextjs.png";
-import graphql from "../assets/graphql.png";
+import bootstrap from "../assets/bootstrap.png";
+import firebase from "../assets/firebase.png";
 import github from "../assets/github.png";
 import tailwind from "../assets/tailwind.png";
+import java from "../assets/java.png"
 
 const Experience = () => {
   const technologies = [
@@ -15,15 +16,13 @@ const Experience = () => {
     { id: 3, src: javascript, title: "JavaScript", style: "shadow-yellow-500" },
     { id: 4, src: reactJs, title: "React", style: "shadow-blue-600" },
     { id: 5, src: tailwind, title: "Tailwind", style: "shadow-sky-400" },
-    { id: 6, src: nextJs, title: "Next JS", style: "shadow-white" },
-    { id: 7, src: graphql, title: "GraphQL", style: "shadow-pink-400" },
+    { id: 6, src: bootstrap, title: "Bootstrap", style: "shadow-purple-500" },
+    { id: 7, src: firebase, title: "Firebase", style: "shadow-yellow-400" },
     { id: 8, src: github, title: "GitHub", style: "shadow-gray-400" },
+    { id: 9, src: java, title: "Java", style: "shadow-orange-600"}
   ];
   return (
-    <div
-      name="experience"
-      className="bg-gradient-to-b from-gray-800 to-black w-full md:h-screen"
-    >
+    <div name="experience" className="bg-black w-full md:h-screen">
       <div className="max-w-screen-lg mx-auto p-4 flex flex-col justify-center w-full h-full text-white">
         <div>
           <p className="text-4xl font-bold border-b-4 border-gray-500 inline">
@@ -42,7 +41,7 @@ const Experience = () => {
             </div>
           ))}
         </div>
-      </div> 
+      </div>
     </div>
   );
 };
