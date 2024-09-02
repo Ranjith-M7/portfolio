@@ -37,7 +37,7 @@ const Portfolio = () => {
     },
   ];
   return (
-    <div name="portfolio" className="bg-black text-white w-full md:h-screen">
+    <div name="portfolio" className="bg-black text-white w-full py-8">
       <div className="max-w-screen-lg mx-auto p-4 flex flex-col justify-center w-full h-full">
         <div className="pb-8">
           <p className="text-4xl font-bold border-b-4 inline border-gray-500">
@@ -46,7 +46,7 @@ const Portfolio = () => {
           <p className="py-6">Check out some of my work right here</p>
         </div>
 
-        <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-12 sm:px-0">
+        <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-8 sm:px-0">
           {portfolios.map(({ id, src }) => (
             <div key={id} className="shadow-md shadow-gray-600 rounded-lg">
               <img
