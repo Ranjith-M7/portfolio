@@ -1,8 +1,13 @@
-import React, { useState } from "react";
+import React, { useState, useContext } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 import { Link } from "react-scroll";
+import { ThemeContext } from "../Theme";
+import { TiWeatherSunny } from "react-icons/ti";
+import { IoMoonOutline } from "react-icons/io5";
 
 const NavBar = () => {
+  const { theme, toggleTheme } = useContext(ThemeContext);
+
   const [nav, setNav] = useState(false);
 
   const links = [
@@ -14,14 +19,23 @@ const NavBar = () => {
   ];
 
   return (
-    <div className="flex justify-between items-center w-full h-20 bg-black text-white sticky top-0 z-50 px-10">
-      <h1 className="text-xl">RANJITH M</h1>
+    <div className={`flex justify-between items-center w-full h-20 fixed z-50 px-10 ${theme}`}>
+      <div className="text-xl flex items-center gap-4">
+        <span>
+          {theme === "dark-theme" ? (
+            <IoMoonOutline onClick={toggleTheme} className="cursor-pointer" />
+          ) : (
+            <TiWeatherSunny onClick={toggleTheme} className="cursor-pointer" />
+          )}
+        </span>
+        <h1>RANJITH M</h1>
+      </div>
 
       <ul className="hidden md:flex">
         {links.map(({ id, link }) => (
           <li
             key={id}
-            className="px-4 cursor-pointer capitalize font-medium text-gray-500 hover:scale-105 hover:text-white duration-200"
+            className="px-4 cursor-pointer capitalize font-medium text-gray-500 hover:scale-105  duration-200"
           >
             <Link to={link} smooth duration={500}>
               {link}

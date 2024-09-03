@@ -2,14 +2,15 @@ import React from "react";
 
 const About = () => {
   return (
-    <div name="about" className="w-full bg-black text-white py-8">
+    <div name="about" className="w-full py-8">
       <div className="max-w-screen-lg p-4 mx-auto flex flex-col justify-center w-full">
-        <div className="pb-8">
-          <p className="text-4xl font-bold inline border-b-4 border-gray-500">
+        <div className="mb-12">
+          <h3 className="text-4xl font-bold mb-4">
             About
-          </p>
+          </h3>
+          <p>A little about me</p>
         </div>
-        <div className="flex flex-col gap-6 leading-7">
+        <div className="flex flex-col gap-6 leading-7 text-justify">
           <p>
             I'm Ranjith M, a dedicated React Front-End Developer based in
             Chennai, Tamil Nadu. I graduated with a Master's degree in Computer

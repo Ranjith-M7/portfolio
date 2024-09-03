@@ -4,8 +4,8 @@ module.exports = {
   theme: {
     extend: {},
     fontFamily: {
-      signature: ["Great Vibes"],
       acumin: ["Acumin Pro"],
+      overpass: ["Overpass"],
     },
   },
   plugins: [],
