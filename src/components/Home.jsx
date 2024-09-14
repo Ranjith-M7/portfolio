@@ -47,7 +47,7 @@ const Home = () => {
           <p className="text-gray-500 py-4 md:max-w-md text-center md:text-left">
             I love creating web applications that are both functional and
             user-friendly. Let's connect! Feel free to reach out to discuss your
-            project ideas or just say hi.
+            project ideas or simply say hello.
           </p>
           <div className="flex justify-center md:justify-start my-2 gap-6 lg:hidden">
             {links.map(({ id, child, href, download }) => (

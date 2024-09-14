@@ -22,13 +22,13 @@ const Experience = () => {
     { id: 9, src: java, title: "Java", style: "shadow-orange-600"}
   ];
   return (
-    <div name="experience" className=" w-full py-8 pt-20">
+    <div name="experience" className=" w-full pt-20">
       <div className="max-w-screen-lg mx-auto p-4 flex flex-col justify-center w-full h-full ">
         <div className="mb-12">
-          <h3 className="text-4xl font-bold mb-4">
+          <h3>
             Experience
           </h3>
-          <p>These are the technologies I've worked with</p>
+          <p className="text-center text-2xl">These are the technologies I've worked with</p>
         </div>
         <div className="grid grid-cols-2 sm:grid-cols-3 px-8 sm:px-0 gap-8 text-center">
           {technologies.map(({ id, title, src, style }) => (

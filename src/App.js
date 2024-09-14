@@ -6,8 +6,9 @@ import NavBar from "./components/NavBar";
 import SocialLinks from "./components/SocialLinks";
 import Experience from "./components/Experience";
 import Contact from "./components/Contact";
+import Top from "./components/Top";
 import { ThemeContext } from "./Theme";
-import "./App.css"
+import "./App.css";
 
 function App() {
   const { theme } = useContext(ThemeContext);
@@ -20,6 +21,7 @@ function App() {
       <Experience />
       <Contact />
       <SocialLinks />
+      <Top />
     </div>
   );
 }

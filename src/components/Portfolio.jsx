@@ -37,13 +37,13 @@ const Portfolio = () => {
     },
   ];
   return (
-    <div name="portfolio" className=" w-full py-8 pt-20">
+    <div name="portfolio" className=" w-full pt-20">
       <div className="max-w-screen-lg mx-auto p-4 flex flex-col justify-center w-full h-full">
         <div className="mb-12">
-          <h3 className="text-4xl font-bold mb-4">
+          <h3>
             Portfolio
           </h3>
-          <p>Check out some of my work right here</p>
+          <p className="text-center text-2xl">Check out some of my work right here</p>
         </div>
 
         <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-8 sm:px-0 ">
@@ -64,6 +64,10 @@ const Portfolio = () => {
               </div>
             </div>
           ))}
+        </div>
+
+        <div>
+          
         </div>
       </div>
     </div>
