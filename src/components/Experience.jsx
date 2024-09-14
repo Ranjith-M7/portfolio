@@ -22,7 +22,7 @@ const Experience = () => {
     { id: 9, src: java, title: "Java", style: "shadow-orange-600"}
   ];
   return (
-    <div name="experience" className=" w-full py-8">
+    <div name="experience" className=" w-full py-8 pt-20">
       <div className="max-w-screen-lg mx-auto p-4 flex flex-col justify-center w-full h-full ">
         <div className="mb-12">
           <h3 className="text-4xl font-bold mb-4">
