@@ -63,9 +63,6 @@ const Portfolio = () => {
       href: "https://graders-51b05.web.app/",
       github: "https://github.com/Ranjith-M7/graders",
     },
-
-
-
   ];
   return (
     <div name="portfolio" className=" w-full pt-20">
@@ -79,21 +76,26 @@ const Portfolio = () => {
 
         <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-8 sm:px-0 ">
           {portfolios.map(({ id, src, href, github }) => (
-            <div key={id} className="shadow-md shadow-gray-600 rounded-lg">
+            <div
+              key={id}
+              className="shadow-md shadow-gray-600 rounded-lg flex flex-col"
+            >
               <img
                 src={src}
                 alt=""
-                className="rounded-md duration-200 hover:scale-105"
+                className="rounded-md duration-200 hover:scale-105 flex-grow"
               />
-              <div className="flex items-center justify-center">
+              <div className="flex items-center justify-center ">
                 <a
                   target="_blank"
+                  rel="noreferrer"
                   href={href}
                   className="px-6 py-3 m-4 hover:scale-105 duration-200 w-1/2 flex justify-around items-center cursor-pointer"
                 >
                   Demo <FaExternalLinkAlt />
                 </a>
                 <a
+                  rel="noreferrer"
                   target="_blank"
                   href={github}
                   className="px-6 py-3 m-4 hover:scale-105 duration-200 w-1/2 flex justify-around items-center cursor-pointer"

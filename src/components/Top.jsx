@@ -10,8 +10,8 @@ const Top = () => {
     });
   };
   return (
-    <div className={`hidden lg:flex fixed bottom-10 right-0 p-2 border ${theme}`} onClick={handleClick}>
-      <FaArrowUp className="cursor-pointer" size={25} />
+    <div className={`hidden lg:flex fixed bottom-10 right-10 p-2 border rounded-full ${theme}`} onClick={handleClick}>
+      <FaArrowUp className="cursor-pointer" size={15} />
     </div>
   );
 };
