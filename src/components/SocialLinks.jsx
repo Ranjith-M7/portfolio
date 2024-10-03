@@ -40,7 +40,7 @@ const SocialLinks = () => {
           Resume <BsFillPersonLinesFill size={30} />
         </>
       ),
-      href: "/Ranjith_M_Resume.pdf",
+      href: "https://drive.google.com/uc?export=download&id=1cQ7kSPrkJ93KFbF__mdKpHWSlqp13DLl",
       style: "rounded-br-md",
       download: true,
     },

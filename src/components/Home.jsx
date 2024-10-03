@@ -12,7 +12,7 @@ const Home = () => {
     {
       id: 1,
       child: <BsFillPersonLinesFill size={20} />,
-      href: "/Ranjith_M_Resume.pdf",
+      href: "https://drive.google.com/uc?export=download&id=1cQ7kSPrkJ93KFbF__mdKpHWSlqp13DLl",
       download: true,
     },
     {
