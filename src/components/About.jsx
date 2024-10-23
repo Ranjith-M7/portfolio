@@ -29,12 +29,11 @@ const About = () => {
             </span>
           </p>
           <p>
-            Throughout my career, I have gained practical experience through
-            internships at{" "}
+            Throughout my career, I have gained practical experience at{" "}
             <span className="font-semibold">DATADNA, NULOGIC, and CODSOFT</span>
             . During my time at DATADNA Technologies, I worked as a{" "}
             <span className="font-semibold">
-              Junior Full Stack Developer Intern
+              Junior Full Stack Developer
             </span>
             , where I developed multiple projects, including{" "}
             <span className="font-semibold">
@@ -42,7 +41,7 @@ const About = () => {
             </span>
             . My role involved building responsive front-end designs using{" "}
             <span className="font-semibold">React.js and Bootstrap,</span>{" "}
-            integrating <span className="font-semibold">Firebase </span>for
+            integrating <span className="font-semibold">Node.js and Firebase </span>for
             <span className="font-semibold"> backend </span> functionalities,
             and implementing React Hooks for efficient state management.
           </p>
