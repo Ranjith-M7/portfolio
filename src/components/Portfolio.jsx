@@ -9,12 +9,12 @@ import miniProjects from "../assets/portfolio/mini-reactjs-projects.png";
 import flowershop from "../assets/portfolio/theflowergarden.png";
 import weather from "../assets/portfolio/zilla-weather-app.png";
 import netflix from "../assets/portfolio/netflix-clone.png";
+import shutterspace from "../assets/portfolio/shutterspace.png";
 
 import { FaExternalLinkAlt } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 
 const Portfolio = () => {
-
   const portfolios = [
     {
       id: 1,
@@ -32,13 +32,20 @@ const Portfolio = () => {
     },
     {
       id: 3,
+      title: "ShutterSpace",
+      src: shutterspace,
+      href: "https://shutterspace.netlify.app/",
+      github: "https://github.com/Ranjith-M7/ShutterSpace",
+    },
+    {
+      id: 4,
       title: "ArtSpot",
       src: artspot,
       href: "https://artspot.netlify.app/",
       github: "https://github.com/Ranjith-M7/ArtSpot-Creative-Hub",
     },
     {
-      id: 4,
+      id: 5,
       title: "Flower Shop",
       src: flowershop,
       href: "https://theflowergarden.netlify.app/",
@@ -46,14 +53,14 @@ const Portfolio = () => {
     },
 
     {
-      id: 5,
+      id: 6,
       title: "Mini Projects",
       src: miniProjects,
       href: "https://mini-reactjs-projects.netlify.app/",
       github: "https://github.com/Ranjith-M7/react-projects-showcase",
     },
     {
-      id: 6,
+      id: 7,
       title: "Weather",
       src: weather,
       href: "https://zilla-weather-app.netlify.app/",
@@ -61,7 +68,7 @@ const Portfolio = () => {
     },
 
     {
-      id: 7,
+      id: 8,
       title: "DentCare",
       src: dentacare,
       href: "https://dentacare2-3c703.web.app/",
@@ -69,14 +76,14 @@ const Portfolio = () => {
     },
 
     {
-      id: 8,
+      id: 9,
       title: "DATADNA",
       src: datadna,
       href: "https://datadna-4eb54.web.app/",
       github: "https://github.com/Ranjith-M7/datadna",
     },
     {
-      id: 9,
+      id: 10,
       title: "Graders",
       src: graders,
       href: "https://graders-51b05.web.app/",
